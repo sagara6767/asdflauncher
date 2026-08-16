@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>asdf games launcher</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 20px;
+    }
+    .sf-glow {
+      font-size: 60px;
+      font-family: 'Orbitron', sans-serif;
+      color: #0ff;
+      text-shadow: 
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        0 0 80px #0ff;
+      animation: pulse 2s infinite alternate;
+    }
+    @keyframes pulse {
+      from {
+        text-shadow: 
+          0 0 5px #0ff,
+          0 0 10px #0ff,
+          0 0 20px #0ff,
+          0 0 40px #0ff,
+          0 0 80px #0ff;
+      }
+      to {
+        text-shadow: 
+          0 0 10px #f0f,
+          0 0 20px #f0f,
+          0 0 40px #f0f,
+          0 0 80px #f0f,
+          0 0 160px #f0f;
+      }
+    }
+    .neon-btn {
+      font-size: 24px;
+      font-family: 'Orbitron', sans-serif;
+      color: #0ff;
+      padding: 15px 40px;
+      border: 2px solid #0ff;
+      border-radius: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      background: transparent;
+      cursor: pointer;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+      animation: glow 2s infinite alternate;
+      transition: transform 0.2s;
+    }
+    .neon-btn:hover {
+      transform: scale(1.1);
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+        box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+        border-color: #0ff;
+      }
+      to {
+        text-shadow: 0 0 20px #f0f, 0 0 40px #f0f, 0 0 80px #f0f;
+        box-shadow: 0 0 20px #f0f, 0 0 40px #f0f inset;
+        border-color: #f0f;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="sf-glow">ASDF LAUNCHER</h1>
+  <h2 class="sf-glow">there is two of asdf games.</h2>
+  <p class="sf-glow">asdfperfect is 2d game of asdf</p>
+  <p class="sf-glow">asdfperfect3d is 3d game of asdf</p>
+
+  <!-- 네온 버튼 두 개 -->
+  <a href="https://sagara6767.github.io/asdfperfect/" class="neon-btn">asdfperfect</a>
+  <a href="https://sagara6767.github.io/asdfperfect3d/" class="neon-btn">asdfperfect3d</a>
+</body>
+</html>
